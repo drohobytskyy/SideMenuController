@@ -24,6 +24,7 @@
 		3D89EA1C23DF25C300C948A1 /* EnumSettingsSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D89EA1B23DF25C300C948A1 /* EnumSettingsSections.swift */; };
 		3D89EA1F23DF58C200C948A1 /* RGBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D89EA1E23DF58C200C948A1 /* RGBExtension.swift */; };
 		3D89EA2123DF58E500C948A1 /* StatusBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D89EA2023DF58E500C948A1 /* StatusBarExtension.swift */; };
+		3D89EA2323DF76FA00C948A1 /* SettingsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D89EA2223DF76FA00C948A1 /* SettingsHeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		3D89EA1B23DF25C300C948A1 /* EnumSettingsSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumSettingsSections.swift; sourceTree = "<group>"; };
 		3D89EA1E23DF58C200C948A1 /* RGBExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBExtension.swift; sourceTree = "<group>"; };
 		3D89EA2023DF58E500C948A1 /* StatusBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarExtension.swift; sourceTree = "<group>"; };
+		3D89EA2223DF76FA00C948A1 /* SettingsHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				3D62F8E123DDE9FC006D4817 /* MenuOptionCell.swift */,
 				3D89EA1923DF202700C948A1 /* SettingsCell.swift */,
+				3D89EA2223DF76FA00C948A1 /* SettingsHeaderCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				3D62F8E223DDE9FC006D4817 /* MenuOptionCell.swift in Sources */,
 				3D1F41EA23DE39BC002584B9 /* EnumMenuOptions.swift in Sources */,
 				3D62F8E423DDF949006D4817 /* MenuOption.swift in Sources */,
+				3D89EA2323DF76FA00C948A1 /* SettingsHeaderCell.swift in Sources */,
 				3D62F8DC23DDDB7F006D4817 /* MenuController.swift in Sources */,
 				3D62F8DA23DDDB6A006D4817 /* HomeController.swift in Sources */,
 				3D27D02123DCD6C4007450A9 /* AppDelegate.swift in Sources */,

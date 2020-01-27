@@ -9,6 +9,7 @@
 import UIKit
 
 private let cell_identifier = "settings_cell"
+private let header_cell_identifier = "settings_header_cell"
 
 class SettingsCotroller: UIViewController {
     
@@ -35,6 +36,7 @@ class SettingsCotroller: UIViewController {
         tableView.rowHeight = CGFloat(Utils.tableViewRowHeight)
         
         tableView.register(SettingsCell.self, forCellReuseIdentifier: cell_identifier)
+        tableView.register(SettingsHeaderCell.self, forCellReuseIdentifier: header_cell_identifier)
         view.addSubview(tableView)
         tableView.frame = view.frame
         tableView.tableFooterView = UIView()
@@ -62,18 +64,11 @@ extension SettingsCotroller: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let view  = UIView()
-        view.backgroundColor = Utils.primaryColor
-        let title = UILabel()
-        title.font = UIFont.boldSystemFont(ofSize: 18)
-        title.textColor = .white
-        title.text = SettingsSections(rawValue: section)?.description
-        view.addSubview(title)
-        title.translatesAutoresizingMaskIntoConstraints = false
-        title.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        title.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 12).isActive = true
+        let headerCell = tableView.dequeueReusableCell(withIdentifier: header_cell_identifier) as! SettingsHeaderCell
         
-        return view
+        headerCell.title = SettingsSections(rawValue: section)?.description
+        
+        return headerCell
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
